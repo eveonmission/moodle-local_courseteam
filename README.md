@@ -2,7 +2,7 @@
 
 ### Moodle plugin local_courseteam ###
 
-local_courseteam enables the teacher to generate a MS Teams group from the course configuration page in Moodle.  
+local_courseteam enables the teacher to generate an MS Teams group from the course configuration page in Moodle.  
 The course participants will be synchronized to the generated Teams group.  
 
 * Version: 2021041100
@@ -41,9 +41,12 @@ checkbox and saves the changes, a Teams group will be generated for the course.
 If the **editing teacher** of the course unchecks the **Generate a Teams group for this course**  
 checkbox and saves the changes, a Teams group will be deleted.
 
-### Contribution guidelines ###
+### Useful links ###
 
-* Details about contribution and the discussion forum will be added soon
+Source control: https://github.com/eveonmission/moodle-local_courseteam
+Bug tracker: https://github.com/eveonmission/moodle-local_courseteam/issues
+Discussion: https://moodle.org/mod/forum/discuss.php?d=422577
+Documentation: https://github.com/eveonmission/moodle-local_courseteam/wiki
 
 ### Contact ###
 
