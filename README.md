@@ -43,10 +43,10 @@ checkbox and saves the changes, a Teams group will be deleted.
 
 ### Useful links ###
 
-Source control: https://github.com/eveonmission/moodle-local_courseteam
-Bug tracker: https://github.com/eveonmission/moodle-local_courseteam/issues
-Discussion: https://moodle.org/mod/forum/discuss.php?d=422577
-Documentation: https://github.com/eveonmission/moodle-local_courseteam/wiki
+Source control: https://github.com/eveonmission/moodle-local_courseteam  
+Bug tracker: https://github.com/eveonmission/moodle-local_courseteam/issues  
+Discussion: https://moodle.org/mod/forum/discuss.php?d=422577  
+Documentation: https://github.com/eveonmission/moodle-local_courseteam/wiki  
 
 ### Contact ###
 
