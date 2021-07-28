@@ -28,7 +28,6 @@ namespace local_courseteam\privacy;
  * Class provider
  * @package local_courseteam
  */
-
 class provider implements
     // This plugin does not store any personal user data.
     \core_privacy\local\metadata\null_provider
@@ -40,8 +39,7 @@ class provider implements
      *
      * @return  string
      */
-    public static function get_reason(): string
-    {
+    public static function get_reason(): string {
         return 'privacy:metadata';
     }
 }
