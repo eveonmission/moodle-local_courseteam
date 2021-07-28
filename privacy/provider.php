@@ -15,33 +15,28 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Access capabilities for courseteam
+ * privacy API for local_courseteam
  *
  * @package     local_courseteam
  * @copyright   2021 Eve Ormisson <eve.ormisson@artun.ee>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace local_courseteam\privacy;
 
-$capabilities = array(
+class provider implements
+    // This plugin does not store any personal user data.
+    \core_privacy\local\metadata\null_provider
+{
 
-    'local/courseteam:view' => array(
-
-        'captype' => 'read',
-        'contextlevel' => CONTEXT_COURSE,
-        'archetypes' => array(
-            'editingteacher' => CAP_ALLOW,
-            'manager' => CAP_ALLOW
-        )
-    ),
-
-    'local/courseteam:edit' => array(
-
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_COURSE,
-        'archetypes' => array(
-            'editingteacher' => CAP_ALLOW
-        )
-    ),
-);
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason(): string
+    {
+        return 'privacy:metadata';
+    }
+}
