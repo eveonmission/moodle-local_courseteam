@@ -37,3 +37,6 @@ $string['teamsgroupcannotbeadded_error'] = 'The teams group cannot be added if t
 $string['manage'] = 'Course Teams group';
 $string['showinnavigation'] = 'Show in navigation';
 $string['showinnavigation_desc'] = 'Enable this plugin after the local_o365 plugin has been correctly configured.';
+
+// Metadata.
+$string['privacy:metadata'] = 'The Course Teams plugin does not store any personal user data.';

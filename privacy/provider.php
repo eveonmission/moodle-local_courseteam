@@ -15,16 +15,32 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details
+ * privacy API for local_courseteam
  *
  * @package     local_courseteam
  * @copyright   2021 Eve Ormisson <eve.ormisson@artun.ee>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace local_courseteam\privacy;
 
-$plugin->component = 'local_courseteam';
-$plugin->version = 2021041101;
-$plugin->requires = 2020110900;
-$plugin->dependencies = ['local_o365' => 2020110905];
+/**
+ * Class provider
+ * @package local_courseteam
+ */
+class provider implements
+    // This plugin does not store any personal user data.
+    \core_privacy\local\metadata\null_provider
+{
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason(): string {
+        return 'privacy:metadata';
+    }
+}
+
