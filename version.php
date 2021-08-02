@@ -25,6 +25,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_courseteam';
-$plugin->version = 2021041100;
+$plugin->version = 2021041101;
 $plugin->requires = 2020110900;
 $plugin->dependencies = ['local_o365' => 2020110905];
